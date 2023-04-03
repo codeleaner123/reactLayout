@@ -2,7 +2,7 @@
     "rewrites":
     [
         {
-            "source":"(/alcohol)|(/document)|(/profile)|(/team)",
+            "source":"/.*(?!/)",
             "destination":"/"
         }
     ]
