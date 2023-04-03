@@ -1,4 +1,9 @@
-{
-  
-    "redirects":[{"source":"/alcohol","destination":"/"}]
-    }
+{  
+    "rewrites":
+    [
+        {
+            "source":"/alcohol",
+            "destination":"/"
+        }
+    ]
+}
