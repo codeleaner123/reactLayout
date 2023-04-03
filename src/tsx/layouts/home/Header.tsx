@@ -5,8 +5,8 @@ import useSwitchElementState from "../../customHooks/useSwitchElementState"
 export default function Header(){
     const [listState, switchListState] = useSwitchElementState();
     window.onclick = (event:Event) => {
-        if(event.target instanceof HTMLElement && !(event.target.classList[0] === "MuiAvatar-root"))
-            switchListState();
+        if(listState === true && event.target instanceof HTMLElement && !(event.target.classList[0] === "MuiAvatar-root"))
+            switchListState(false);
         }
     return (
         <AppBar position="static" sx={{height:"80px", position:"relative",zIndex:"100", display:"flex", flexDirection:"row", alignItems:"center"}}>
