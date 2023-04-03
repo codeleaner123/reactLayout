@@ -1,0 +1,7 @@
+a.default{
+    text-decoration: none;
+    color:rgb(228, 227, 227)
+}
+li:has(a.current) {
+    border-right: 4px solid rgb(210, 83, 83);
+}

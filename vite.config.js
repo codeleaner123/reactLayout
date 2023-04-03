@@ -30,7 +30,7 @@ export default defineConfig({
             dir:path.resolve(__dirname, "./public"),
             entryFileNames: `js/[name].js`,
             chunkFileNames: `js/[name].js`,
-            assetFileNames:"js/[name].[ext]"
+            assetFileNames:"asset/[name].[ext]"
         }
     },
     outDir:"../public"
