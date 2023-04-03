@@ -12,3 +12,9 @@ li.menulist{
 li.menulist:hover {
     background-color: rgba(116, 115, 115, 0.8);
 }
+@media screen and (max-width:620px){
+    div.sideMenuBar{
+        display: none;
+    }
+    
+}

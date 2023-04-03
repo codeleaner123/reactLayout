@@ -1,6 +1,7 @@
 import React from "react"
 import { AppBar, Avatar, MenuList, MenuItem,ListItemIcon, ListItemText} from "@mui/material"
 import useSwitchElementState from "../../customHooks/useSwitchElementState"
+import "./header.css"
 
 export default function Header(){
     const [listState, switchListState] = useSwitchElementState();
@@ -13,12 +14,12 @@ export default function Header(){
                 <div style={{marginLeft:"20px"}}>
                 <h3>Alcohol APP</h3>
                 </div>
-                <div style={{position:"relative",marginRight:"200px",marginLeft:"auto",}}>
+                <div style={{position:"relative",marginRight:"10%",marginLeft:"auto",}}>
                 <Avatar onClick={() => {switchListState()}} sx={{cursor:"pointer"}}>G</Avatar>
-                <div style={{display:listState ? "block" : "none",borderRadius:"10px",position:"absolute", backgroundColor:"white", border:"1px solid gray"}}>
+                <div className="icon-list" style={{display:listState ? "block" : "none",borderRadius:"10px",position:"absolute", right:"0px", backgroundColor:"white", border:"1px solid gray"}}>
                 <MenuList>
                 <MenuItem>
-                    <ListItemIcon>
+                    <ListItemIcon >
                         <span className="material-symbols-outlined">notifications</span>
                     </ListItemIcon>
                     <ListItemText sx={{color:"black"}}>notifications</ListItemText>
