@@ -5,3 +5,10 @@ a.default{
 li:has(a.current) {
     border-right: 4px solid rgb(210, 83, 83);
 }
+li.menulist{
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+li.menulist:hover {
+    background-color: rgba(116, 115, 115, 0.8);
+}

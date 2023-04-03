@@ -1,0 +1,1 @@
+import{j as o,B as t}from"./index.js";function i(){return o(t,{sx:{width:"50%",marginLeft:"auto",marginRight:"auto",marginTop:"50px",border:"1px solid black"},children:"this is a alchoContent page"})}export{i as default};
