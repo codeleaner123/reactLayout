@@ -6,6 +6,17 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
+        <script>
+            var script = document.createElement('script');
+            script.src='https://ipinfo.io?callback=callback'
+            document.head.appendChild(script);
+        
+            function callback(data) {
+                console.log(data.ip);
+            };
+            // またはアロー関数を使って
+            // callback = data => console.log(data.ip);
+        </script>
         <noscript>javascriptをONにしてください</noscript>
         <div id="root">
         </div>
