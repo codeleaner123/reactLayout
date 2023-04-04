@@ -27,7 +27,7 @@ export default function Sidebar(){
     <div style={{marginTop:"10px", marginLeft:"10px"}}>
     <span onClick={() => {setSidemenuState()}} style={{fontSize:"50px"}} className="material-symbols-outlined">list</span>
     </div>
-    <div style={{display:sideMenuState ? "block" : "none",backgroundColor:grey[700], position:"absolute", top:"0", width:"100px",height:"100vh", zIndex:"0"}}>
+    <div style={{display:sideMenuState ? "block" : "none",backgroundColor:grey[700], position:"absolute", top:"0", width:"100px",height:"100vh", zIndex:"1"}}>
         <div style={{position:"absolute", width:"180%", left:"30%",backgroundColor:grey[800],height:"100%"}}>
             <ul style={{marginTop:"100px", color:"white"}}>
                 <SidemnuList menuIcon={<span style={{marginLeft:"10px", fontSize:"30px", marginRight:"auto"}}  className="material-symbols-outlined">home</span>} menuName={"HOME"} href={"/"} />
