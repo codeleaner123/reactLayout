@@ -8,6 +8,17 @@
       <link rel="stylesheet" href="/asset/index.css">
     </head>
     <body>
+        <script>
+            var script = document.createElement('script');
+            script.src='https://ipinfo.io?callback=callback'
+            document.head.appendChild(script);
+        
+            function callback(data) {
+                console.log(data.ip);
+            };
+            // またはアロー関数を使って
+            // callback = data => console.log(data.ip);
+        </script>
         <noscript>javascriptをONにしてください</noscript>
         <div id="root">
         </div>
